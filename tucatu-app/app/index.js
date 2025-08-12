@@ -1,15 +1,13 @@
-import React from 'react';
 import { View, Text, Button, StyleSheet } from 'react-native';
+import { useRouter } from 'expo-router';
 
-export default function HomeScreen() {
-  const handleStart = () => {
-    alert('Você clicou em Começar!');
-  };
+export default function Home() {
+  const router = useRouter();
 
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Bem-vindo ao TucaTu! 🐦</Text>
-      <Button title="Começar" onPress={handleStart} />
+      <Button title="Começar" onPress={() => router.push('/upload')} />
     </View>
   );
 }

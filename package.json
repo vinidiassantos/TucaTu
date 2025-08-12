@@ -1,11 +1,58 @@
 {
+  "name": "TucaTu",
+  "version": "1.0.0",
+  "main": "expo-router/entry",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo run:android",
+    "ios": "expo run:ios",
+    "web": "expo start --web"
+  },
   "dependencies": {
     "@react-navigation/native": "^7.1.17",
     "@react-navigation/native-stack": "^7.3.25",
+    "@types/react": "~18.2.45",
+    "cors": "^2.8.5",
+    "expo": "^50.0.0",
+    "expo-image-picker": "~14.7.1",
+    "expo-router": "^5.1.4",
     "express": "^5.1.0",
+    "multer": "^2.0.2",
+    "react": "18.2.0",
+    "react-native": "0.73.0",
     "react-native-gesture-handler": "^2.28.0",
     "react-native-reanimated": "^4.0.2",
     "react-native-safe-area-context": "^5.6.0",
-    "react-native-screens": "^4.13.1"
+    "react-native-screens": "^4.13.1",
+    "typescript": "^5.3.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.0"
+  },
+  "expo": {
+    "plugins": [
+      "expo-router"
+    ],
+    "name": "TucaTu",
+    "slug": "tucatu",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ]
   }
 }
